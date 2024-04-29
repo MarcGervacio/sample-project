@@ -1,0 +1,12 @@
+<div class="main-container">
+    <div class="first-container">
+        <p class="title">Pet Manager 3000</p>
+        <div class="input-container">
+            <input type="text" class="add-pet-input" [formControl]="frmContrl">
+            <button class="add-button" (click)="addPet()">Add Pet</button>
+        </div>
+    </div>
+    <app-listed [items]="listedList" (addButtonClicked)="nextButtonClicked($event)"></app-listed>
+    <app-examine [items]="examineList" (addButtonClicked)="nextButtonClicked($event)"></app-examine>
+    <app-owner [items]="ownerList"></app-owner>
+</div>

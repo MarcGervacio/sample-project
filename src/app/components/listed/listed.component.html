@@ -1,0 +1,8 @@
+<div class="main-container">
+    <div class="title">Listed</div>
+    <div class="container">
+        <div class="list-container" *ngFor="let item of items">{{item}}
+            <button class="add-button" (click)="add(item)">Next</button>
+        </div>
+    </div>
+</div>
